@@ -480,12 +480,12 @@ nav a.active{
   nav {
     position: fixed;
     display: none; /* Initially hidden */
-    padding-top: 50px;
-    width: 30%; 
-    margin-top: 100px; 
+    padding-top: 10px;
+    width: 70%; 
+    margin-top: 650px; 
     right: 0;
     margin-right: 20%;
-    height: 70dvh; /* Size of the nav */
+    height: 80dvh; /* Size of the nav */
     border: 3px solid #d60000;
     border-radius: 2rem;
     background-color: var(--text-color);
