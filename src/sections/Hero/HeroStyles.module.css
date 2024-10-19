@@ -563,9 +563,9 @@ button:active {
   nav {
     position: fixed;
     display: none; /* Initially hidden */
-    padding-top: 20px;
+    padding-top: 10px;
     width: 70%; 
-    margin-top: 580px; 
+    margin-top: 650px; 
     right: 0;
     margin-right: 20%;
     height: 80dvh; /* Size of the nav */
