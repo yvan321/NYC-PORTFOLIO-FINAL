@@ -566,8 +566,9 @@ button:active {
     padding-top: 10px;
     width: 70%; 
     margin-top: 650px; 
-    right: 0;
-    margin-right: 20%;
+    margin-right: 35%;
+    margin-left: 0;
+
     height: 80dvh; /* Size of the nav */
     border: 3px solid #d60000;
     border-radius: 2rem;

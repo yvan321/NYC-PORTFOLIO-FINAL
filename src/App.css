@@ -483,8 +483,7 @@ nav a.active{
     padding-top: 10px;
     width: 70%; 
     margin-top: 650px; 
-    right: 0;
-    margin-right: 20%;
+    
     height: 80dvh; /* Size of the nav */
     border: 3px solid #d60000;
     border-radius: 2rem;
@@ -527,7 +526,7 @@ nav a.active{
     width: 80px;
     color: var(--background-color);
     background: transparent;
-    margin-right: 85px;
+    margin-right: 80px;
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
