@@ -610,6 +610,7 @@ button:active {
     font-size: 1.8rem;
     color: var(--background-color);
     background: transparent;
+    margin-right: 100px;
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
