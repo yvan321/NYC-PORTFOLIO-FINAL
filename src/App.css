@@ -511,7 +511,6 @@ nav a.active{
     color: var(--background-color); /* Changed to match theme */
     text-align: center;
     margin: 0;
-    
     transition: color 0.3s ease-in-out;
   }
 
@@ -527,7 +526,7 @@ nav a.active{
     font-size: 1.8rem;
     color: var(--background-color);
     background: transparent;
-    margin-right: 50px;
+    margin-right: 80px;
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
