@@ -1,8 +1,10 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
+import zenstore from '../../assets/zen-store.png';
+import alumnitracking from '../../assets/alumni-tracking.png';
+import hiltonhotel from '../../assets/hilton-hotel.png';
+import ivanjbakery from '../../assets/ivanj-bakery.png';
+import quintech from '../../assets/quintech.png';
+import michiel from '../../assets/michiel.png';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -11,28 +13,40 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
+          src={zenstore}
           link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
+          h3="Zen Store"
+          p="Inventory Management System"
         />
         <ProjectCard
-          src={freshBurger}
+          src={alumnitracking}
           link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          h3="AlumTracking"
+          p="Alumni Tracking System"
         />
         <ProjectCard
-          src={hipsster}
+          src={hiltonhotel}
           link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
+          h3="Hilton Hotel"
+          p="Hotel Reservation System"
         />
         <ProjectCard
-          src={fitLift}
+          src={ivanjbakery}
           link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
+          h3="IvanJ Bakery"
+          p="Inventory Management System"
+        />
+        <ProjectCard
+          src={quintech}
+          link="https://lelelss.github.io/QuinTechDV/?fbclid=IwZXh0bgNhZW0CMTEAAR3_g7OLVu3wbqkskiOfU_hvjjpgxfyPX8wXJpfV9Lojd9DT8KJ7V4EkLps_aem_cJTmqBbVSwjP8l2kQTlarg"
+          h3="Quintech"
+          p="IT Company Website"
+        />
+        <ProjectCard
+          src={michiel}
+          link="https://github.com/Ade-mir/company-landing-page-2"
+          h3="Michiel Beauty"
+          p="Inventory Management System"
         />
       </div>
     </section>

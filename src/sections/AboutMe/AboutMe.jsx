@@ -1,5 +1,5 @@
 import styles from './AboutMeStyles.module.css';
-import moonbg from '../../assets/moon.png'; // Replace with your image path
+import earth from '../../assets/earthh.svg'; // Replace with your image path
 
 function AboutMe() {
   return (
@@ -10,7 +10,7 @@ function AboutMe() {
         Hi, I’m Kups, I’m a beginner in web development, excited to dive into building websites and learning how to bring ideas to life online. My goal is to combine my love for design with my growing web development skills.
         When I’m not working, I enjoy experimenting with new design styles and learning more about coding. Thanks for checking out my work!
       </p>
-      <img src={moonbg} alt="About Me" className={styles.aboutImage} />
+      <img src={earth} alt="About Me" className={styles.aboutImage} />
     </section>
   );
 }

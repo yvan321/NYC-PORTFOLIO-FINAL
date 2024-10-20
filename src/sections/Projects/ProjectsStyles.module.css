@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
   
     img {
       max-width: 250px;
