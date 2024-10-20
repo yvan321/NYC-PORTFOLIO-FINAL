@@ -9,6 +9,7 @@ function Contact() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   // Handle form input changes
   const handleInputChange = (e) => {
@@ -16,9 +17,29 @@ function Contact() {
     setFormState({ ...formState, [name]: value });
   };
 
+  // Simple email validation
+  const isValidEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email);
+  };
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Basic input validation
+    if (!formState.name || !formState.email || !formState.message) {
+      setErrorMessage('All fields are required.');
+      return;
+    }
+
+    if (!isValidEmail(formState.email)) {
+      setErrorMessage('Please enter a valid email address.');
+      return;
+    }
+
+    setIsLoading(true);
+    setErrorMessage('');
+
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
@@ -29,13 +50,21 @@ function Contact() {
       });
 
       const data = await response.json();
+      setIsLoading(false);
+
       if (data.success) {
         setIsSubmitted(true);
+        setFormState({
+          name: '',
+          email: '',
+          message: '',
+        });
         setErrorMessage('');
       } else {
         setErrorMessage('Failed to send message. Please try again.');
       }
     } catch (error) {
+      setIsLoading(false);
       setErrorMessage('An error occurred. Please try again later.');
       console.error('Error:', error);
     }
@@ -86,7 +115,7 @@ function Contact() {
             onChange={handleInputChange}
           />
         </div>
-        <input className="hover btn" type="submit" value="Submit" />
+        <input className="hover btn" type="submit" value={isLoading ? 'Sending...' : 'Submit'} disabled={isLoading} />
       </form>
 
       {isSubmitted && <p>Your message has been sent successfully!</p>}
