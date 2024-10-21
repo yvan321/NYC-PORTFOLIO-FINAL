@@ -1,10 +1,35 @@
 import styles from './ContactStyles.module.css';
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_6v5bvhm',       // Replace with your Service ID
+      'template_v3uzpm5',      // Replace with your Template ID
+      form.current,
+      'EEHkrdGxdH9Z3WUBe'        // Replace with your Public Key
+    )
+    .then((result) => {
+        console.log(result.text);
+        alert("Message sent successfully!");
+    }, (error) => {
+        console.log(error.text);
+        alert("Failed to send the message. Please try again.");
+    });
+
+    // Clear form after submission
+    e.target.reset();
+  };
+
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form action="">
+      <form ref={form} onSubmit={sendEmail}>
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name
@@ -22,7 +47,7 @@ function Contact() {
             Email
           </label>
           <input
-            type="text"
+            type="email"          // Make sure to use "email" type for email validation
             name="email"
             id="email"
             placeholder="Email"
@@ -37,7 +62,8 @@ function Contact() {
             name="message"
             id="message"
             placeholder="Message"
-            required></textarea>
+            required
+          ></textarea>
         </div>
         <input className="hover btn" type="submit" value="Submit" />
       </form>
