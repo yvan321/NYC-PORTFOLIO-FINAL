@@ -5,6 +5,7 @@ import hiltonhotel from '../../assets/hilton-hotel.png';
 import ivanjbakery from '../../assets/ivanj-bakery.png';
 import quintech from '../../assets/quintech.png';
 import michiel from '../../assets/michiel.png';
+import cvsuwebsite from '../../assets/cvsuwebsite.png';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -47,6 +48,12 @@ function Projects() {
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Michiel Beauty"
           p="Inventory Management System"
+        />
+        <ProjectCard
+          src={cvsuwebsite}
+          link="https://lelelss.github.io/CVSU-WEBSITE/index.html"
+          h3="CvSU Website"
+          p="School Website"
         />
       </div>
     </section>
