@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/profile.png';
+import heroImg from '../../assets/profneil.svg';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import arrowUpLight from '../../assets/arrowup-light.png';
@@ -11,7 +11,7 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/cv.pdf';
+import CV from '../../assets/CV-NEIL-YVAN.pdf';
 import { useTheme } from '../../common/ThemeContext';
 import { FaBars } from 'react-icons/fa';
 
@@ -25,10 +25,10 @@ function Hero() {
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [showBackToTop, setShowBackToTop] = useState(false); // state for back-to-top visibility
-  const words = ['Web Developer', 'Designer', 'Graphic Artist', 'Kupal']; // Words to display
+  const words = ['Web Developer', 'Designer', 'Graphic Artist', 'Programmer']; // Words to display
   const headerRef = useRef(null);
   const navRef = useRef(null);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   const sections = ['#home', '#about', '#skills', '#projects', '#education', '#contact'];
 
   // Show or hide navbar
@@ -141,8 +141,8 @@ function Hero() {
         <nav ref={navRef}>
           <a href="#home" className="active">Home</a>
           <a href="#about">About Me</a>
+          <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
-          <a href="#projects">Works</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -155,25 +155,21 @@ function Hero() {
       <div className={styles.container}>
         <div className={styles.colorModeContainer}>
           <img src={heroImg} className={styles.hero} alt="Profile picture" />
-          <img
-            className={styles.colorMode}
-            src={themeIcon}
-            alt="Color mode icon"
-            onClick={toggleTheme}
-          />
+          
         </div>
+        
         <div className={styles.info}>
           <h1>
-            MR
+            NEIL &nbsp;YVAN
             <br />
-            KUPS
+            CALIWAN
           </h1>
           <h2 className={styles.typingtext}>
             <span>{words[currentWordIndex]}</span>
           </h2>
           <span>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-              <img src={facebookIcon} alt="Twitter icon" />
+            <a href="https:/facebook.com/nycaliwan.03/" target="_blank" rel="noopener noreferrer">
+              <img src={facebookIcon} alt="Facebook icon" />
             </a>
             <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
               <img src={githubIcon} alt="Github icon" />
@@ -188,15 +184,28 @@ function Hero() {
           <a href={CV} download>
             <button className="hover">Resume</button>
           </a>
+          
         </div>
       </div>
-
+      
+{/* Color mode button */}
+<div className={styles.colorModeee} onClick={toggleTheme}>
+  <img
+    className={styles.colorModeProp}
+    src={themeIcon}
+    alt="Color mode icon"
+  />
+</div>
       {/* Back to top button */}
-      {showBackToTop && (
-        <button className={styles.backToTop} onClick={scrollToTop}>
-          <img src={arrowUpIcon} alt="Back to top icon" />
-        </button>
-      )}
+{showBackToTop && (
+  <button className={styles.backToTop} onClick={scrollToTop}>
+    <img src={arrowUpIcon} alt="Back to top icon" />
+  </button>
+)}
+
+
+
+      
     </section>
   );
 }

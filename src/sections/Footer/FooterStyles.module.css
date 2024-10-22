@@ -1,5 +1,16 @@
 .container {
-    margin-top: -50px;
+    margin-top: -130px;
+    text-align: center;
+    
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: black;
+    }
+  }
+
+  [data-theme='dark'] .container {
+    margin-top: -130px;
     text-align: center;
     
     p {
@@ -7,5 +18,3 @@
       color: white;
     }
   }
-
-  

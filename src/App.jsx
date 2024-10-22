@@ -5,6 +5,7 @@ import Footer from './sections/Footer/Footer';
 import Hero from './sections/Hero/Hero';
 import Projects from './sections/Projects/Projects';
 import Skills from './sections/Skills/Skills';
+import Education from './sections/Education/Education';
 
 
 function App() {
@@ -22,7 +23,10 @@ function App() {
       </section>
       <section id="skills">
         <Skills />
-      </section>
+        </section>
+      <section id="education">
+        <Education />
+        </section>
       <section id="contact">
         <Contact />
       </section>

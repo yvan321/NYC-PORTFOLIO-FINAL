@@ -199,9 +199,7 @@ nav a.active{
     }
   }
   
-  .colorMode:hover {
-    animation: rotate 0.6s linear;
-  }
+  
   
   .hero {
     max-width: 200px;
@@ -379,7 +377,7 @@ nav a.active{
   }
 
   .sectionTitle {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 }
 
@@ -464,10 +462,7 @@ nav a.active{
     width: 100%; 
   }
 
-  .colorMode {
-    margin-right: 0; /* Remove or adjust the margin-right to center the color mode icon */
-    height: 30px;
-  }
+  
 
   .description {
     display: flex;
@@ -533,6 +528,9 @@ nav a.active{
     z-index: 1000;
   }
 
+  .sectionTitle{
+  margin-bottom: 80px;
+  }
 }
 
 
@@ -557,9 +555,7 @@ nav a.active{
     margin: auto;
   }
 
-  .colorMode {
-    right: -100px; /* Corrected 'pz' to 'px' */
-  }
+ 
 }
 
 
@@ -599,7 +595,7 @@ nav a.active{
   }
 
   .sectionTitle {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 }
 
@@ -613,6 +609,6 @@ nav a.active{
   }
 
   .sectionTitle {
-    margin-bottom: 75px;
+    margin-bottom: 100px;
   }
 }

@@ -15,25 +15,21 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={zenstore}
-          link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Zen Store"
           p="Inventory Management System"
         />
         <ProjectCard
           src={alumnitracking}
-          link="https://github.com/Ade-mir/company-landing-page-2"
           h3="AlumTracking"
           p="Alumni Tracking System"
         />
         <ProjectCard
           src={hiltonhotel}
-          link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Hilton Hotel"
           p="Hotel Reservation System"
         />
         <ProjectCard
           src={ivanjbakery}
-          link="https://github.com/Ade-mir/company-landing-page-2"
           h3="IvanJ Bakery"
           p="Inventory Management System"
         />
@@ -45,7 +41,6 @@ function Projects() {
         />
         <ProjectCard
           src={michiel}
-          link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Michiel Beauty"
           p="Inventory Management System"
         />
