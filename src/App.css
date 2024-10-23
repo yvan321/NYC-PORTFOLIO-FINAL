@@ -19,7 +19,9 @@
 }
 
 * {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.5s ease, color 0.3s ease;
+  
+
 }
 
 header {
@@ -521,7 +523,7 @@ nav a.active{
     width: 80px;
     color: var(--background-color);
     background: transparent;
-    margin-right: 80px;
+    margin-right: 10%;
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
@@ -610,5 +612,14 @@ nav a.active{
 
   .sectionTitle {
     margin-bottom: 100px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .container{
+    width: 100%;
   }
 }

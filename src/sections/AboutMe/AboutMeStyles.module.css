@@ -4,6 +4,8 @@
   --btn-color: #C21807;
   --glow-color-light: rgba(173, 2, 2, 0.8);
   --shadow-color-light: rgba(255, 69, 0, 0.5);
+  
+  
 }
 
 [data-theme='dark'] {
@@ -16,6 +18,7 @@
 
 body {
   margin: 0;
+  
   margin-top: 100px;
   height: 200vh; /* Increase height to allow scrolling */
   background-color: var(--background-color);
@@ -33,7 +36,25 @@ body {
   justify-content: center;
   align-items: center; /* Center items */
   position: relative;
-  background-image: url('../../assets/sunbgbg.svg'); /* Background image */
+  background-image: url('../../assets/moonbgbglight.svg'); /* Background image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  opacity: 0.8; /* Optional: adjust opacity */
+  padding: 20px; /* Optional: add padding */
+}
+
+[data-theme='dark'] .container {
+  margin-top: 100px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 1000px; /* Full height for centering */
+  justify-content: center;
+  align-items: center; /* Center items */
+  position: relative;
+  background-image: url('../../assets/moonbgbg.svg'); /* Background image */
   background-size: cover; /* Cover the entire section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating */
@@ -56,11 +77,14 @@ body {
 
 
 
-.description {
+
+
+:root .description{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 200;
   color: black;
+  text-shadow: 2px 4px 6px rgb(255, 255, 255); /* horizontal, vertical, blur, and color */
   max-width: 75%;
   margin: auto;
   margin-top: 50px;
@@ -72,18 +96,26 @@ body {
     0 0 50px rgba(255, 0, 0, 0.5), 
     0 0 100px rgba(255, 0, 0, 0.3);
   animation: fire-flicker 1.5s infinite ease-in-out;
-}
-
-
-:root .description{
-    font-weight: 800;
-    color: black;
 
 }
 
 [data-theme='dark'] .description{
-  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 200;
   color: white;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0); /* horizontal, vertical, blur, and color */
+  max-width: 75%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1); /* Light fiery glow */
+  border-radius: 5px;
+  box-shadow: 
+    0 0 20px var(--glow-color-light), 
+    0 0 50px rgba(255, 0, 0, 0.5), 
+    0 0 100px rgba(255, 0, 0, 0.3);
+  animation: fire-flicker 1.5s infinite ease-in-out;
 
 }
 

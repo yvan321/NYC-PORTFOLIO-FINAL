@@ -171,10 +171,10 @@ function Hero() {
             <a href="https:/facebook.com/nycaliwan.03/" target="_blank" rel="noopener noreferrer">
               <img src={facebookIcon} alt="Facebook icon" />
             </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/yvan321" target="_blank" rel="noopener noreferrer">
               <img src={githubIcon} alt="Github icon" />
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/neil-yvan-237325175/" target="_blank" rel="noopener noreferrer">
               <img src={linkedinIcon} alt="LinkedIn icon" />
             </a>
           </span>

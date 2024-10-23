@@ -1,6 +1,7 @@
 import styles from './AboutMeStyles.module.css';
 import earth from '../../assets/earthh.svg'; // Replace with your image path
 
+
 function AboutMe() {
   return (
     <section id="about" className={styles.container}>
