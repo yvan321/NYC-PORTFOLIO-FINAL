@@ -29,6 +29,7 @@ function Hero() {
   const headerRef = useRef(null);
   const navRef = useRef(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const sections = ['#home', '#about', '#skills', '#projects', '#education', '#contact'];
 
   // Show or hide navbar
@@ -48,7 +49,7 @@ function Hero() {
     return () => {
       navLinks.forEach((link) => {
         link.removeEventListener('click', () => {
-          // eslint-disable-next-line react-hooks/exhaustive-deps
+
           navRef.current.classList.remove('active');
         });
       });
@@ -88,33 +89,39 @@ function Hero() {
   // Update active nav link based on scroll position
   useEffect(() => {
     const navLinks = navRef.current.querySelectorAll('a');
+    
     const observerOptions = {
-      threshold: 0.7, // When 70% of the section is visible
+      threshold: 0.7, // Trigger when 70% of the section is visible
     };
-
+  
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const sectionId = entry.target.id;
         const navLink = navRef.current.querySelector(`a[href="#${sectionId}"]`);
+        
         if (entry.isIntersecting) {
           navLinks.forEach((link) => link.classList.remove('active'));
           if (navLink) navLink.classList.add('active');
         }
       });
     }, observerOptions);
-
+  
+    // Observe all sections
     sections.forEach((sectionId) => {
       const section = document.querySelector(sectionId);
-      if (section) observer.observe(section);
+      if (section) observer.observe(section); // Only observe if the section exists
     });
-
+  
     return () => {
+      // Cleanup: Unobserve sections when component unmounts
       sections.forEach((sectionId) => {
         const section = document.querySelector(sectionId);
         if (section) observer.unobserve(section);
       });
     };
   }, [sections]);
+  
+  
 
   // Change words in the span element
   useEffect(() => {

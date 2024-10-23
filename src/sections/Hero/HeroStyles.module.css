@@ -50,6 +50,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   padding: 1rem 9%;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
@@ -203,9 +204,7 @@ button:active {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.colorModeContainer {
-  position: relative;
-}
+
 
 
 .colorModeee {
@@ -571,12 +570,12 @@ button:active {
 
   .hero {
     padding-top: 100px;
-    margin-left: 20px; 
+    align-items: center;
+
     width: 100%; 
   }
 
-  .colorMode {
-    margin-right: 0; /* Remove or adjust the margin-right to center the color mode icon */
+  .colorMode { /* Remove or adjust the margin-right to center the color mode icon */
     height: 30px;
   }
 
@@ -594,7 +593,7 @@ button:active {
     padding-top: 10px;
     width: 70%; 
     margin-top: 650px; 
-    margin-right: 35%;
+ 
     margin-left: 0;
 
     height: 80dvh; /* Size of the nav */
@@ -670,9 +669,7 @@ button:active {
     margin: auto;
   }
 
-  .colorMode {
-    right: -100px; /* Corrected 'pz' to 'px' */
-  }
+  
 }
 
 /* Extra Large Screens (1400px and above) */

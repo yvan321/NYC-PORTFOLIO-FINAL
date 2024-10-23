@@ -462,6 +462,7 @@ nav a.active{
     padding-top: 100px;
     margin-left: 0; 
     width: 100%; 
+    margin-right: 0;
   }
 
   
@@ -469,9 +470,10 @@ nav a.active{
   .description {
     display: flex;
     justify-content: center;
+    margin-left: 100px;
     align-items: center;
     text-align: center;
-    padding: 10px; /* Add padding if needed to improve spacing on smaller screens */
+
   }
 
   nav {
