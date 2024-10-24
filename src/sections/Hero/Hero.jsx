@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/profneil.svg';
+import heroImg from '../../assets/PROFNEIL1.svg';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import arrowUpLight from '../../assets/arrowup-light.png';
