@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url('../../assets/moonbgbglight.svg');
+  background-image: url('../../assets/sunbgbg.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 }
 
 [data-theme='dark'] .container {
-  background-image: url('../../assets/moonbgbg.svg');
+  background-image: url('../../assets/moonbgs.svg');
 }
 
 

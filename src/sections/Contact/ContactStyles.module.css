@@ -4,19 +4,7 @@
 
 
 
-:root .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 1200px;
-    background-image: url('../../assets/manwholelight.svg'); /* Background image */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat;
-  
-  }
-  
-  [data-theme='dark'] .container {
+ .container {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -27,6 +15,7 @@
     background-repeat: no-repeat;
   
   }
+  
   
   form {
     display: flex;
