@@ -1,17 +1,17 @@
 import styles from './AboutMeStyles.module.css';
-import earth from '../../assets/earthh.svg'; // Replace with your image path
+import mountain from '../../assets/mountain-bg.svg'; 
 
 
 function AboutMe() {
   return (
-    <section id="about" className={styles.container}>
-      <h1 className="sectionTitle">About Me</h1>
+    <section className={styles.container}>
+      <h1 className={styles.sectionTitle}>About Me</h1>
       
       <p className={styles.description}>
         Hi, I’m Neil Yvan, I’m a beginner in web development, excited to dive into building websites and learning how to bring ideas to life online. My goal is to combine my love for design with my growing web development skills.
         When I’m not working, I enjoy experimenting with new design styles and learning more about coding. Thanks for checking out my work!
       </p>
-      <img src={earth} alt="About Me" className={styles.aboutImage} />
+      <img src={mountain} alt="About Me" className={styles.aboutImage} />
     </section>
   );
 }

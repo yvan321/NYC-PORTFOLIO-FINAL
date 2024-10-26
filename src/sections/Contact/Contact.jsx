@@ -2,6 +2,7 @@ import styles from './ContactStyles.module.css';
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
+
 function Contact() {
   const form = useRef();
 
@@ -9,10 +10,10 @@ function Contact() {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_6v5bvhm',       // Replace with your Service ID
-      'template_v3uzpm5',      // Replace with your Template ID
+      'service_6v5bvhm',       
+      'template_v3uzpm5',      
       form.current,
-      'EEHkrdGxdH9Z3WUBe'        // Replace with your Public Key
+      'EEHkrdGxdH9Z3WUBe'        
     )
     .then((result) => {
         console.log(result.text);
@@ -22,7 +23,7 @@ function Contact() {
         alert("Failed to send the message. Please try again.");
     });
 
-    // Clear form after submission
+    
     e.target.reset();
   };
 
@@ -47,7 +48,7 @@ function Contact() {
             Email
           </label>
           <input
-            type="email"          // Make sure to use "email" type for email validation
+            type="email"          
             name="email"
             id="email"
             placeholder="Email"

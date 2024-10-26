@@ -1,10 +1,11 @@
 import styles from './FooterStyles.module.css';
 
+
 function Footer() {
   return (
     <section id="footer" className={styles.container}>
       <p>
-        &copy; NEIL YVAN CALIWAN. <br />
+        &copy; KUPAL. <br />
         All rights reserved. 2024
       </p>
     </section>

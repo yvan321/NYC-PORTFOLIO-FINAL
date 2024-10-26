@@ -24,20 +24,19 @@ function Hero() {
   const arrowUpIcon = theme === 'light' ? arrowUpLight : arrowUpDark;
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [showBackToTop, setShowBackToTop] = useState(false); // state for back-to-top visibility
-  const words = ['Web Developer', 'Designer', 'Graphic Artist', 'Programmer']; // Words to display
+  const [showBackToTop, setShowBackToTop] = useState(false); 
+  const words = ['Web Developer', 'Designer', 'Graphic Artist', 'Programmer']; 
   const headerRef = useRef(null);
   const navRef = useRef(null);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const sections = ['#home', '#about', '#skills', '#projects', '#education', '#contact'];
 
-  // Show or hide navbar
+
   const showNavbar = () => {
     navRef.current.classList.toggle('active');
   };
 
-  // Close navbar when a link is clicked
   useEffect(() => {
     const navLinks = navRef.current.querySelectorAll('a');
     navLinks.forEach((link) => {
@@ -56,7 +55,7 @@ function Hero() {
     };
   }, []);
 
-  // Hide/show navbar on scroll
+
   useEffect(() => {
     let lastScrollTop = 0;
     const header = headerRef.current;
@@ -69,7 +68,7 @@ function Hero() {
         if (header) header.style.top = '0';
       }
 
-      // Show or hide back to top button
+
       if (scrollTop > 200) {
         setShowBackToTop(true);
       } else {
@@ -86,12 +85,12 @@ function Hero() {
     };
   }, []);
 
-  // Update active nav link based on scroll position
+
   useEffect(() => {
     const navLinks = navRef.current.querySelectorAll('a');
     
     const observerOptions = {
-      threshold: 0.7, // Trigger when 70% of the section is visible
+      threshold: 0.7, 
     };
   
     const observer = new IntersectionObserver((entries) => {
@@ -106,14 +105,14 @@ function Hero() {
       });
     }, observerOptions);
   
-    // Observe all sections
+    
     sections.forEach((sectionId) => {
       const section = document.querySelector(sectionId);
-      if (section) observer.observe(section); // Only observe if the section exists
+      if (section) observer.observe(section); 
     });
   
     return () => {
-      // Cleanup: Unobserve sections when component unmounts
+      
       sections.forEach((sectionId) => {
         const section = document.querySelector(sectionId);
         if (section) observer.unobserve(section);
@@ -123,16 +122,16 @@ function Hero() {
   
   
 
-  // Change words in the span element
+  
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 3000); // Change every 3 seconds
+    }, 3000); 
 
     return () => clearInterval(intervalId);
   }, [words.length]);
 
-  // Scroll back to top function
+  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

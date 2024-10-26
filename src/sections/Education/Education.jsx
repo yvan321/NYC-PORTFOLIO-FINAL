@@ -12,7 +12,7 @@ function Education() {
   
     return (
         <section id="projects" className={styles.container}>
-          <h1 className="sectionTitle">Education</h1>
+          <h1 className={styles.sectionTitle}>Education</h1>
           <div className={styles.projectsContainer}>
             <EducationCard
               src={educcvsu}

@@ -3,7 +3,7 @@
     flex-direction: column;
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 200px;
+    margin-bottom: 0;
     
     img {
       max-width: 250px;
@@ -25,7 +25,10 @@
     }
   }
   
-
+  .sectionTitle {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
 
   .projectsContainer {
     display: flex;
@@ -40,5 +43,11 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
       padding: 0 30px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .container {
+      margin-bottom: 0;
     }
   }

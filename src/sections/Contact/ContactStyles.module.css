@@ -1,17 +1,14 @@
 
-
-
-
-
-
  .container {
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 1200px;
-    background-image: url('../../assets/manwholedark.svg'); /* Background image */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image */
+    bottom: 0;
+    margin-bottom: 0;
+    background-image: url('../../assets/footer-bg.svg');
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
   
   }
