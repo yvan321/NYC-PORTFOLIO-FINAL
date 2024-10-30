@@ -1,9 +1,23 @@
+import  { useEffect } from "react";
 import styles from './ContactStyles.module.css';
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 
 function Contact() {
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration
+      once: true, // Animation only happens once
+      offset: 100, // Distance to trigger animation
+    });
+  }, []);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -29,9 +43,9 @@ function Contact() {
 
   return (
     <section id="contact" className={styles.container}>
-      <h1 className="sectionTitle">Contact</h1>
+      <h1 data-aos="fade-up" className="sectionTitle">Contact</h1>
       <form ref={form} onSubmit={sendEmail}>
-        <div className="formGroup">
+        <div data-aos="fade-up" className="formGroup">
           <label htmlFor="name" hidden>
             Name
           </label>
@@ -43,7 +57,7 @@ function Contact() {
             required
           />
         </div>
-        <div className="formGroup">
+        <div data-aos="fade-up" className="formGroup">
           <label htmlFor="email" hidden>
             Email
           </label>
@@ -55,7 +69,7 @@ function Contact() {
             required
           />
         </div>
-        <div className="formGroup">
+        <div data-aos="fade-up" className="formGroup">
           <label htmlFor="message" hidden>
             Message
           </label>

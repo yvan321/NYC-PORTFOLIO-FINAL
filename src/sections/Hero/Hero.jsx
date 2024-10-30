@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState,  } from 'react';
 import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/PROFNEIL1.svg';
 import sun from '../../assets/sun.svg';
@@ -14,8 +14,12 @@ import linkedinDark from '../../assets/linkedin-dark.svg';
 import CV from '../../assets/CV-NEIL-YVAN.pdf';
 import { useTheme } from '../../common/ThemeContext';
 import { FaBars } from 'react-icons/fa';
+import "aos/dist/aos.css";
+
 
 function Hero() {
+
+
   const { theme, toggleTheme } = useTheme();
   const themeIcon = theme === 'light' ? sun : moon;
   const facebookIcon = theme === 'light' ? facebookLight : facebookDark;
@@ -36,6 +40,8 @@ function Hero() {
   const showNavbar = () => {
     navRef.current.classList.toggle('active');
   };
+
+  
 
   useEffect(() => {
     const navLinks = navRef.current.querySelectorAll('a');
@@ -158,7 +164,7 @@ function Hero() {
         </button>
       </header>
 
-      <div className={styles.container}>
+      <div  data-aos="fade-up" className={styles.container}>
         <div className={styles.colorModeContainer}>
           <img src={heroImg} className={styles.hero} alt="Profile picture" />
           

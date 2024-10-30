@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@react-oauth/google": "^0.12.1",
+    "aos": "^2.3.4",
     "nodemailer": "^6.9.15",
     "portfolio": "file:",
     "react": "^18.3.1",

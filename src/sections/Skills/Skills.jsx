@@ -7,11 +7,15 @@ import javalogo from '../../assets/javalogo.svg';
 import pythonlogo from '../../assets/pythonlogo.svg';
 import logologo from '../../assets/logologo.svg';
 import weblogo from '../../assets/weblogo.svg';
+import "aos/dist/aos.css";
+
 
 import SkillList from '../../common/SkillList';
 
 
 function Skills() {
+
+  
   
   return (
     <section id="skills" className={styles.container}>

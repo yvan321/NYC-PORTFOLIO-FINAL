@@ -1,3 +1,4 @@
+import  { useEffect } from "react";
 import styles from './ProjectsStyles.module.css';
 import zenstore from '../../assets/zen-store.png';
 import alumnitracking from '../../assets/alumni-tracking.png';
@@ -7,12 +8,24 @@ import quintech from '../../assets/quintech.png';
 import michiel from '../../assets/michiel.png';
 import cvsuwebsite from '../../assets/cvsuwebsite.png';
 import ProjectCard from '../../common/ProjectCard';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function Projects() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration
+      once: true, // Animation only happens once
+      offset: 100, // Distance to trigger animation
+    });
+  }, []);
+
   return (
     <section id="projects" className={styles.container}>
-      <h1 className={styles.sectionTitle}>Projects</h1>
-      <div className={styles.projectsContainer}>
+      <h1 data-aos="fade-up" className={styles.sectionTitle}>Projects</h1>
+      <div data-aos="fade-up" className={styles.projectsContainer}>
         <ProjectCard
           src={zenstore}
           h3="Zen Store"
