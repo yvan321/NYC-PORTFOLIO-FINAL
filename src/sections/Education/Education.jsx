@@ -13,9 +13,9 @@ function Education() {
   
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Animation duration
-      once: true, // Animation only happens once
-      offset: 100, // Distance to trigger animation
+      duration: 1200, 
+      once: true, 
+      offset: 100, 
     });
   }, []);
     return (

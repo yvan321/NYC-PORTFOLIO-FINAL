@@ -249,7 +249,7 @@ button:active {
   gap: 20px;
 }
 
-/* Back-to-Top Button Appearance Animation */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -285,7 +285,7 @@ button:active {
 }
 
 .backToTop:hover {
-  transform: scale(1.1); /* Added scaling on hover */
+  transform: scale(1.1); 
 }
 
 
@@ -300,17 +300,6 @@ button:active {
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* Existing Media Queries... */
 
 /* Desktop */
 @media screen and (min-width: 767px) and (max-width: 1023px) {
@@ -342,7 +331,7 @@ button:active {
     margin-right: 130px;;
   }
   
-  /* Fade-In Animation */
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -354,7 +343,7 @@ button:active {
     }
   }
   
-  /* Apply fade-in to container */
+
   .container {
     display: flex;
     flex-direction: column;
@@ -388,7 +377,7 @@ button:active {
     cursor: pointer;
   }
   
-  /* Rotate Animation for Color Mode Icon */
+
   @keyframes rotate {
     from {
       transform: rotate(0deg);
@@ -424,7 +413,7 @@ button:active {
     animation: blink-caret 0.75s step-end infinite, wordFade 12s infinite;
   }
   
-  /* Keyframes for word fade animation */
+
   @keyframes wordFade {
     0% {
       opacity: 0;
@@ -452,11 +441,11 @@ button:active {
   
   span a img {
     width: 30px;
-    transition: transform 0.3s ease; /* Added transition for hover animation */
+    transition: transform 0.3s ease; 
   }
   
   span a:hover img {
-    transform: scale(1.2); /* Scale up on hover */
+    transform: scale(1.2); 
   }
   
   a {
@@ -502,7 +491,7 @@ button:active {
     gap: 20px;
   }
   
-  /* Back-to-Top Button Appearance Animation */
+
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -538,7 +527,7 @@ button:active {
   }
   
   .backToTop:hover {
-    transform: scale(1.1); /* Added scaling on hover */
+    transform: scale(1.1); 
   }
 }
 
@@ -575,7 +564,7 @@ button:active {
     width: 100%; 
   }
 
-  .colorMode { /* Remove or adjust the margin-right to center the color mode icon */
+  .colorMode {
     height: 30px;
   }
 
@@ -584,19 +573,17 @@ button:active {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px; /* Add padding if needed to improve spacing on smaller screens */
+    padding: 10px; 
   }
 
   nav {
     position: fixed;
-    display: none; /* Initially hidden */
+    display: none; 
     padding-top: 10px;
     width: 70%; 
-    margin-top: 650px; 
- 
+    margin-top: 800px; 
     margin-left: 0;
-
-    height: 80dvh; /* Size of the nav */
+    height: 65vh; 
     border: 3px solid #d60000;
     border-radius: 2rem;
     background-color: var(--text-color);
@@ -609,17 +596,17 @@ button:active {
     z-index: 999;
   }
 
-  /* Show the nav when the active class is toggled */
+
   nav.active {
-    display: flex; /* Show the nav when active */
-    transform: translateX(0); /* Slide into view */
+    display: flex; 
+    transform: translateX(0); 
   }
 
   nav a {
     padding: 10px;
     display: block;
     font-size: 20px;
-    color: var(--background-color); /* Changed to match theme */
+    color: var(--background-color); 
     text-align: center;
     margin: 0;
     
@@ -630,7 +617,7 @@ button:active {
     color: #cccccc;
   }
 
-  /* Display the mobile menu button */
+
   .nav-btn {
     display: block;
     visibility: visible;
@@ -672,7 +659,7 @@ button:active {
   
 }
 
-/* Extra Large Screens (1400px and above) */
+
 @media screen and (min-width: 1400px) {
   .hero {
     max-width: 400px;
@@ -680,11 +667,11 @@ button:active {
   }
 }
 
-/* General Styles for Body and Root */
+
 body {
   background-color: var(--background-color);
   display: flex;
-  padding-top: 40px; /* Corrected padding */
+  padding-top: 40px; 
   justify-content: center;
   margin: 10px auto 0px;
 }
