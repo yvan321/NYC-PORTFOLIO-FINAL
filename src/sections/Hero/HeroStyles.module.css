@@ -590,7 +590,7 @@ a {
     width: 70%; 
     margin-top: 800px; 
     margin-left: 0;
-    height: 65vh; 
+    height: 90vh; 
     border: 3px solid #d60000;
     border-radius: 2rem;
     background-color: var(--text-color);
@@ -631,6 +631,7 @@ a {
 
   .nav-btn {
     display: block;
+    height: 80vh;
     visibility: visible;
     opacity: 1;
     font-size: 1.8rem;
