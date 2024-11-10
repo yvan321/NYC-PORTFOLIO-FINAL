@@ -8,12 +8,13 @@
   --footer-text-color: #888;
 }
 
-:root button:hover {
-  background-color: #000000;
+:root .mybtn:hover {
+  background-color: #000000; 
   color: #FCFFF9;
-  transform: scale(1.05);
+  transform: scale(1.05) ;
   transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
   cursor: pointer;
+  z-index: 2000;
 }
 
 [data-theme='dark'] {
@@ -26,7 +27,7 @@
   --footer-text-color: #bbb;
 }
 
-[data-theme='dark'] button:hover {
+[data-theme='dark'] .mybtn:hover {
   background-color: #C21807;
   color: #FCFFF9;
   transform: scale(1.05);
@@ -88,6 +89,7 @@ header {
   margin-bottom: 0%;
   animation: fadeIn 1s ease-out forwards;
   opacity: 0; 
+  z-index: 1000;
 }
 
 .logo {
@@ -97,6 +99,12 @@ header {
   cursor: pointer;
   transition: transform 0.5s ease; 
   margin-right: 0;
+}
+.logoImage {
+  width: 40px; /* Adjust width as needed */
+  margin-right: 20px;
+  height: auto; /* Keeps the aspect ratio */ /* Adds space between the image and the text */
+  vertical-align: middle; /* Aligns the image with the text */
 }
 
 .logo:hover {
@@ -125,6 +133,7 @@ header {
 
 .hero {
   max-width: 200px;
+  
 }
 
 span {
@@ -186,10 +195,11 @@ a {
   text-decoration: none; 
 }
 
-button {
+.mybtn {
   background-color: var(--btn-color);
   color: var(--btn-text-color);
   border: none;
+  z-index: 1001;
   border-radius: 20px;
   width: 126px;
   height: 50px;
@@ -199,11 +209,18 @@ button {
   transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 }
 
-button:active {
+.mybtn:active {
   transform: translateY(2px);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.mybtn:hover {
+  background-color: #000000;
+  color: #FCFFF9;
+  transform: scale(1.05);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  cursor: pointer;
+}
 
 
 
@@ -247,18 +264,11 @@ button:active {
   flex-direction: column;
   font-family: 'Rubik', sans-serif;;
   gap: 20px;
+  z-index: 1000;
 }
 
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.info a{
+  z-index: 1000;
 }
 
 .backToTop {
@@ -370,7 +380,12 @@ button:active {
   .logo:hover {
     transform: scale(1.1);
   }
-  
+  .logoImage {
+    width: 40px; /* Adjust width as needed */
+    margin-right: 20px;
+    height: auto; /* Keeps the aspect ratio */ /* Adds space between the image and the text */
+    vertical-align: middle; /* Aligns the image with the text */
+  }
   .themeToggle {
     background-color: transparent; 
     border: none;
@@ -454,23 +469,6 @@ button:active {
     text-decoration: none; 
   }
   
-  button {
-    background-color: var(--btn-color);
-    color: var(--btn-text-color);
-    border: none;
-    border-radius: 20px;
-    width: 126px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-  }
-  
-  button:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  }
   
   .colorModeContainer {
     position: relative;
@@ -532,6 +530,15 @@ button:active {
 }
 
 
+@media only screen and (max-width: 823px) {
+  .header a{
+    margin: 10px;
+  }
+
+  .logo{
+    margin-right: 10px;
+  }
+}
 
 
 
@@ -595,7 +602,11 @@ button:active {
     overflow-y: auto;
     z-index: 999;
   }
-
+  .logoImage {
+    width: 30px; /* Adjust width as needed */
+    margin-right: 10px;
+    
+  }
 
   nav.active {
     display: flex; 

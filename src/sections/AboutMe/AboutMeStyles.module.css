@@ -17,7 +17,9 @@
 .container {
   margin-bottom: 0;
   display: flex;
+  overflow: hidden;
   height: 1000px;
+  margin-top: 100px;
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
@@ -47,7 +49,6 @@
   position: absolute;
   bottom: 0; 
   left: 0; 
-  z-index: -1; 
 }
 
 
@@ -57,58 +58,26 @@
 }
 
 .description {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  left: 0;
-  font-weight: 200;
-  color: var(--text-color);
-  text-shadow: 2px 4px 6px rgba(255, 255, 255, 1);
-  max-width: 75%;
-  margin-top: 50px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  box-shadow: 
-    0 0 20px var(--glow-color-light), 
-    0 0 50px rgba(255, 0, 0, 0.5), 
-    0 0 100px rgba(255, 0, 0, 0.3);
-  animation: fire-flicker 1.5s infinite ease-in-out;
+  font-size: 22px; /* Reduced font size for a cleaner look */
+  font-weight: 300; /* Light font weight for a modern feel */
+  color: var(--text-color); /* Adapt to light/dark themes */
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle depth */
+  max-width: 60%; /* Narrower width for better readability */
+  margin-top: 40px;
+  padding: 25px 30px; /* Extra padding for spacious feel */
+  background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for theme changes */
+  z-index: 100;
 }
+
 
 [data-theme='dark'] .description {
-  color: white;
-  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0);
+  background-color: rgba(34, 34, 34, 0.9); /* Dark background for dark theme */
 }
 
-@keyframes fire-glow {
-  0%, 100% {
-    text-shadow: 
-      0 0 10px var(--glow-color-light), 
-      0 0 20px rgba(255, 69, 0, 0.5), 
-      0 0 30px rgba(255, 69, 0, 0.3);
-  }
-  50% {
-    text-shadow: 
-      0 0 15px rgba(255, 69, 0, 1), 
-      0 0 30px rgba(253, 217, 61, 0.95), 
-      0 0 45px rgba(255, 0, 0, 0.6);
-  }
-}
 
-@keyframes fire-flicker {
-  0%, 100% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  75% {
-    opacity: 0.95;
-  }
-}
 
 @media only screen and (max-width: 767px) {
   .container {
