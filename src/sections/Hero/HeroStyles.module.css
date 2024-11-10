@@ -587,10 +587,11 @@ a {
     position: fixed;
     display: none; 
     padding-top: 10px;
+    padding-bottom: 10px;
     width: 70%; 
-    margin-top: 800px; 
+    margin-top: 750px; 
     margin-left: 0;
-    height: 90vh; 
+    height: 80vh; 
     border: 3px solid #d60000;
     border-radius: 2rem;
     background-color: var(--text-color);
@@ -631,7 +632,8 @@ a {
 
   .nav-btn {
     display: block;
-    height: 80vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
     visibility: visible;
     opacity: 1;
     font-size: 1.8rem;
