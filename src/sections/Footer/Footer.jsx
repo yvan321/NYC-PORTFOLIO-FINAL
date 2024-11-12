@@ -7,6 +7,7 @@ function Footer() {
       <p>
         &copy; NEIL YVAN CALIWAN. <br />
         All rights reserved. 2024
+        <br />
       </p>
     </section>
   );

@@ -322,25 +322,7 @@ nav a.active{
 
   }
 
-  nav {
-    position: fixed;
-    display: none; /* Initially hidden */
-    padding-top: 10px;
-    width: 70%; 
-    margin-top: 650px; 
-    
-    height: 80dvh; /* Size of the nav */
-    border: 3px solid #d60000;
-    border-radius: 2rem;
-    background-color: var(--text-color);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    overflow-y: auto;
-    z-index: 999;
-  }
+  
 
   /* Show the nav when the active class is toggled */
   nav.active {

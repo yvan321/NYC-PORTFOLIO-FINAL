@@ -585,16 +585,14 @@ a {
   }
 
   nav {
-    position: fixed;
-    display: none; 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 70%; 
-    margin-top: 750px; 
-    margin-left: 0;
-    height: 80vh; 
+    display: none; /* Initially hidden */
+    position: fixed; /* Make it fixed to cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
     border: 3px solid #d60000;
-    border-radius: 2rem;
     background-color: var(--text-color);
     flex-direction: column;
     justify-content: center;
@@ -603,7 +601,9 @@ a {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     overflow-y: auto;
     z-index: 999;
-  }
+}
+
+  
   .logoImage {
     width: 30px; /* Adjust width as needed */
     margin-right: 10px;

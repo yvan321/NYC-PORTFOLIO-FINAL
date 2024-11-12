@@ -1,14 +1,14 @@
 import React from 'react';
 
-function ProjectCard({ src, link, h3, p }) {
+function ProjectCard({ src, link, h3, description, status }) {
     return (
-      <a href={link} target="_blank">
-        <img className="hover" src={src} alt={`${h3} logo`} />
-        <h3>{h3}</h3>
-        <p>{p}</p>
-      </a>
+        <a href={link} target="_blank" rel="noopener noreferrer" className="projectCard">
+            <img src={src} alt={`${h3} logo`} />
+            <h3>{h3}</h3>
+            <p>{description}</p>
+            <p>{status}</p>
+        </a>
     );
-  }
-  
-  export default ProjectCard;
+}
 
+export default ProjectCard;

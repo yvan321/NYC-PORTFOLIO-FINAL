@@ -34,8 +34,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
   }
+
+  .statusLabel {
+    opacity: 1; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }
+  
+  .notYetLive {
+    color: rgba(255, 0, 0, 0.7); 
+  }
+  
+  .live {
+    color: rgba(0, 255, 0, 0.7); 
+  }
+  
   
   @media (width >= 800px) {
     .projectsContainer {
