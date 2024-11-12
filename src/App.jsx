@@ -41,16 +41,16 @@ function App() {
           <section id="about">
             <AboutMe />
           </section>
-          <section id="projects">
+          <section id="#projects">
             <Projects />
           </section>
-          <section id="skills">
+          <section id="#skills">
             <Skills />
           </section>
           <section id="education">
             <Education />
           </section>
-          <section id="contact">
+          <section id="#contact">
             <Contact />
           </section>
           <Footer />

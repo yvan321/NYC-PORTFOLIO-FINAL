@@ -10,7 +10,7 @@ function AboutMe() {
 
 
   return (
-    <section  className={styles.container}>
+    <section id="#about" className={styles.container}>
       <h1 className={styles.sectionTitle}>About Me</h1>
       
       <p className={styles.description}>
