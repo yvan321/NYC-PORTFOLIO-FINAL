@@ -19,6 +19,7 @@
   display: flex;
   overflow: hidden;
   height: 1000px;
+  min-height: 800px;
   margin-top: 100px;
   flex-direction: column;
   text-align: center;
@@ -32,7 +33,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Enables parallax */
+  background-attachment: fixed; 
   opacity: 0.8;
 }
 
@@ -53,28 +54,28 @@
 
 
 .sectionTitle {
-  margin-top: -200px;
+  
   margin-bottom: 50px;
 }
 
 .description {
-  font-size: 22px; /* Reduced font size for a cleaner look */
-  font-weight: 300; /* Light font weight for a modern feel */
-  color: var(--text-color); /* Adapt to light/dark themes */
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle depth */
-  max-width: 60%; /* Narrower width for better readability */
+  font-size: 22px; 
+  font-weight: 300; 
+  color: var(--text-color); 
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); 
+  max-width: 60%; 
   margin-top: 40px;
-  padding: 25px 30px; /* Extra padding for spacious feel */
-  background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
-  border-radius: 12px; /* Rounded corners for a modern look */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for theme changes */
+  padding: 25px 30px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 12px; 
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   z-index: 100;
 }
 
 
 [data-theme='dark'] .description {
-  background-color: rgba(34, 34, 34, 0.9); /* Dark background for dark theme */
+  background-color: rgba(34, 34, 34, 0.9); 
 }
 
 
@@ -88,7 +89,7 @@
     justify-content: center; 
     min-height: auto; 
     overflow-x: hidden;
-    height: 100vh;
+    height: 1000px;
   }
 
   .sectionTitle {

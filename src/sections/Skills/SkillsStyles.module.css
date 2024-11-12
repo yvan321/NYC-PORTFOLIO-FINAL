@@ -6,7 +6,8 @@
   text-align: center;
   margin-top: 300px;
   margin-bottom: 100px;
-  height: 70vh;
+  max-height: 800px;
+  min-height: 500px;
 
   background-image: url('../../assets/skillday-bg.svg'); 
   background-size: cover; 
@@ -69,6 +70,6 @@
 
   @media only screen and (max-width: 767px) {
     .container {
-      height: 100vh;
+      height: 1000px;
     }
   }
