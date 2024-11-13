@@ -21,7 +21,7 @@ function Projects() {
   }, []);
 
   return (
-    <section id="projects" className={styles.container}>
+    <section id="project" className={styles.container}>
       <h1 data-aos="fade-up" className={styles.sectionTitle}>Projects</h1>
       <div data-aos="fade-up" className={styles.projectsContainer}>
         <div className={styles.projectWrapper}>

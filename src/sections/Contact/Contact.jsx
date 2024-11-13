@@ -42,7 +42,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className={styles.container}>
+    <section id="#contact" className={styles.container}>
       <h1 data-aos="fade-up" className="sectionTitle">Contact</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div data-aos="fade-up" className="formGroup">

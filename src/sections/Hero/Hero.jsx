@@ -110,13 +110,14 @@ function Hero() {
     NYC
   </a>
 
-        <nav ref={navRef}>
-          {sectionIds.map((id, index) => (
-            <a key={index} href={id} onClick={showNavbar}>
-              {id.replace('#', '').charAt(0).toUpperCase() + id.slice(2)}
-            </a>
-          ))}
-        </nav>
+  <nav ref={navRef}>
+  {sectionIds.map((id) => (
+    <a key={id} href={id} onClick={showNavbar}>
+      {id.replace('#', '').charAt(0).toUpperCase() + id.slice(2)}
+    </a>
+  ))}
+</nav>
+
 
         <button className="nav-btn" onClick={showNavbar} aria-label="Open navigation">
           <FaBars />
