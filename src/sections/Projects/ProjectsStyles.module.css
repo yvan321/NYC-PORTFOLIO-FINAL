@@ -35,6 +35,14 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    transition: transform 200ms ease-in-out;
+  }
+  .projectsContainer:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    transform: scale(1.05);
   }
 
   .statusLabel {
