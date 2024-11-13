@@ -155,7 +155,7 @@ function Hero() {
           
           <a href={CV} download>
           <button className={styles.mybtn}
-          >Resume</button>
+          >Download CV</button>
 
           </a>
         </div>

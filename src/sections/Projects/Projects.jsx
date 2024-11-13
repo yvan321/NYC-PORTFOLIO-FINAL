@@ -29,7 +29,7 @@ function Projects() {
             src={zenstore}
             h3="Zen Store"
             description="Inventory Management System"
-            status="Not Yet Live"
+
           />
           <div className={`${styles.statusLabel} ${styles.notYetLive}`}>
             Not Yet Live
@@ -40,7 +40,7 @@ function Projects() {
             src={alumnitracking}
             h3="AlumTracking"
             description="Alumni Tracking System"
-            status="Not Yet Live"
+
           />
           <div className={`${styles.statusLabel} ${styles.notYetLive}`}>
             Not Yet Live
@@ -51,7 +51,7 @@ function Projects() {
             src={hiltonhotel}
             h3="Hilton Hotel"
             description="Hotel Reservation System"
-            status="Not Yet Live"
+
           />
           <div className={`${styles.statusLabel} ${styles.notYetLive}`}>
             Not Yet Live
@@ -62,7 +62,7 @@ function Projects() {
             src={ivanjbakery}
             h3="IvanJ Bakery"
             description="Inventory Management System"
-            status="Not Yet Live"
+
           />
           <div className={`${styles.statusLabel} ${styles.notYetLive}`}>
             Not Yet Live
@@ -74,7 +74,7 @@ function Projects() {
             link="https://lelelss.github.io/QuinTechDV/?fbclid=IwZXh0bgNhZW0CMTEAAR3_g7OLVu3wbqkskiOfU_hvjjpgxfyPX8wXJpfV9Lojd9DT8KJ7V4EkLps_aem_cJTmqBbVSwjP8l2kQTlarg"
             h3="Quintech"
             description="IT Company Website"
-            status="Live"
+
           />
           <div className={`${styles.statusLabel} ${styles.live}`}>
             Live
@@ -85,7 +85,7 @@ function Projects() {
             src={michiel}
             h3="Michiel Beauty"
             description="Inventory Management System"
-            status="Not Yet Live"
+ 
           />
           <div className={`${styles.statusLabel} ${styles.notYetLive}`}>
             Not Yet Live
@@ -97,7 +97,7 @@ function Projects() {
             link="https://lelelss.github.io/CVSU-WEBSITE/index.html"
             h3="CvSU Website"
             description="School Website"
-            status="Live"
+
           />
           <div className={`${styles.statusLabel} ${styles.live}`}>
             Live
