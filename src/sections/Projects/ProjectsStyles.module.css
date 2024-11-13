@@ -39,12 +39,15 @@
   }
 
   .projectWrapper {
-    transform: scale(1.05);
-  }
-  .projectWrapper:hover {
-    transform: scale(1.05);
-  }
+    position: relative;
+    overflow: hidden;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
 
+.projectWrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
   .statusLabel {
     opacity: 1; 
